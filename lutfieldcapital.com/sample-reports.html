@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sample Reports - Lutfield Capital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LUTFIELD CAPITAL</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sample-reports.html">Sample Reports</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="sample-reports">
+      <h2>Sample Research Reports</h2>
+      <p>Get a feel for our approach and reporting quality. Please enter your details below to access our sample reports.</p>
+      <form action="#" method="POST" id="lead-capture-form" class="lead-capture-form">
+        <input type="text" name="name" placeholder="Name (required)" required>
+        <input type="email" name="email" placeholder="E-mail (required)" required>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <button type="submit">Get Reports</button>
+      </form>
+      <div id="download-links" style="display:none;">
+        <h3>Download Sample Reports</h3>
+        <ul>
+          <li>BIM BIRLESIK MAGAZALAR A – Sample Report (coming soon)</li>
+          <li>ASELSAN ELEKTRONIK SANAYI VE TICARI – Sample Report (coming soon)</li>
+          <li>TURKIYE PETROL RAFINERILERI A – Sample Report (coming soon)</li>
+        </ul>
+      </div>
+      <script>
+        document.getElementById('lead-capture-form').onsubmit = function(e){
+          e.preventDefault();
+          document.getElementById('lead-capture-form').style.display = 'none';
+          document.getElementById('download-links').style.display = 'block';
+        }
+      </script>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Lutfield Capital. All rights reserved.<br>
+    info@lutfieldcapital.com &nbsp; | &nbsp;
+    <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
+  </footer>
+</body>
+</html>
